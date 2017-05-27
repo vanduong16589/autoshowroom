@@ -1,0 +1,5 @@
+.pricing-addon label:after{
+    content: "";
+    clear: both;
+    display: block;
+}

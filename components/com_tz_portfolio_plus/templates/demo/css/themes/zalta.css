@@ -1,0 +1,156 @@
+.element .TzInner{
+    margin: 0;
+    text-align: left;
+}
+#tz_options {
+    padding-bottom: 35px;
+}
+.element .TzPortfolioTitle{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    /*border-bottom: 1px solid white;*/
+}
+.element .TzPortfolioTitle:after{
+    background: white;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+    -moz-transform: translate3d(-100%, 0px, 0px);
+    -ms-transform: translate3d(-100%, 0px, 0px);
+    -o-transform: translate3d(-100%, 0px, 0px);
+    transform: translate3d(-100%, 0px, 0px);
+    -webkit-transition: -webkit-transform 0.35s ease 0s;
+    -moz-transition: -moz-transform 0.35s ease 0s;
+    -ms-transition: -ms-transform 0.35s ease 0s;
+    -o-transition: -o-transform 0.35s ease 0s;
+    transition: transform 0.35s ease 0s ;
+    width: 100%;
+}
+.element .TzInner:hover .TzPortfolioTitle:after{
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+.element .TzPortfolioTitle a{
+    display: block;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.35s ease 0s;
+    -moz-transition: -moz-transform 0.35s ease 0s;
+    -ms-transition: -ms-transform 0.35s ease 0s;
+    -o-transition: -o-transform 0.35s ease 0s;
+    transition: transform 0.35s ease 0s ;
+}
+.element .TzInner:hover .TzPortfolioTitle a {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.element .TzPortfolioTitle,
+.element .TzPortfolioTitle a{
+    font-size: 24px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.element .TzPortfolioDescription {
+    color: white;
+    font-style: italic;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 0.3s linear 0s;
+    -moz-transition: opacity 0.3s linear 0s;
+    -ms-transition: opacity 0.3s linear 0s;
+    -o-transition: opacity 0.3s linear 0s;
+    transition: opacity 0.3s linear 0s ;
+    width: 100%;
+    z-index: 1;
+    padding: 40px;
+}
+.element .TzInner:hover .TzPortfolioDescription {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+.element .description-inner {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0px, 0px);
+    -moz-transform: translate3d(100%, 0px, 0px);
+    -ms-transform: translate3d(100%, 0px, 0px);
+    -o-transform: translate3d(100%, 0px, 0px);
+    transform: translate3d(100%, 0px, 0px);
+    -webkit-transition: opacity 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
+    -moz-transition: opacity 0.35s ease 0s, -moz-transform 0.35s ease 0s;
+    -ms-transition: opacity 0.35s ease 0s, -ms-transform 0.35s ease 0s;
+    -o-transition: opacity 0.35s ease 0s, -o-transform 0.35s ease 0s;
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s ;
+}
+.element .TzInner:hover .description-inner {
+    opacity: 1;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+.element .TzPortfolioDescription a{
+    color: white;
+}
+.element .tzpp_absolute{
+    top: auto;
+    left: 40px;
+    bottom: 40px;
+    height: 60px;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: opacity 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
+    -moz-transition: opacity 0.35s ease 0s, -moz-transform 0.35s ease 0s;
+    -ms-transition: opacity 0.35s ease 0s, -ms-transform 0.35s ease 0s;
+    -o-transition: opacity 0.35s ease 0s, -o-transform 0.35s ease 0s;
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s ;
+}
+.element .TzInner:hover .tzpp_absolute {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.element a.tzpp_button{
+    width: 60px;
+    height: 60px;
+    color: #3f3f3f;
+    background: white;
+    line-height: 60px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.element a.tzpp_button:nth-child(2n){
+    color: white;
+    background: #3f3f3f;
+}
+#tz_append {
+    margin-top: 50px;
+}

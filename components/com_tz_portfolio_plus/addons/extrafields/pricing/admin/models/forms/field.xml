@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <!-- Start parameters for field's create or edit view -->
+    <fields name="params">
+        <fieldset name="basic">
+
+            <field name="add_on_basic" type="spacer" class="alert alert-warning btn-block"
+                   label="PLG_EXTRAFIELDS_PRICING_BASIC_TITLE"/>
+            <field name="tztype" type="list" class="btn-group"
+                   default="1"
+                   label="PLG_EXTRAFIELDS_PRICING_TYPE_SEARCH_OPTION">
+                <option value="1">PLG_EXTRAFIELDS_PRICING_DROPDOWN</option>
+                <option value="2">PLG_EXTRAFIELDS_PRICING_CURSOR</option>
+            </field>
+
+            <field type="text" name="min_values" showon="tztype:1"
+                   label="PLG_EXTRAFIELDS_PRICING_MIN_VALUES_LABEL"
+                   description="PLG_EXTRAFIELDS_PRICING_MIN_MAX_VALUES_DESC"/>
+
+            <field type="text" name="max_values" showon="tztype:1"
+                   label="PLG_EXTRAFIELDS_PRICING_MAX_VALUES_LABEL"
+                   description="PLG_EXTRAFIELDS_PRICING_MIN_MAX_VALUES_DESC"/>
+
+            <field type="number" name="min_value"
+                   default="0" showon="tztype:2"
+                   label="PLG_EXTRAFIELDS_PRICING_MIN_VALUE_LABEL"
+                   description="PLG_EXTRAFIELDS_PRICING_MIN_VALUE_DESC"/>
+
+            <field type="number" name="max_value"
+                   default="0" showon="tztype:2"
+                   label="PLG_EXTRAFIELDS_PRICING_MAX_VALUE_LABEL"/>
+
+            <field type="spacer" name="add_on_symbol" class="alert alert-warning btn-block"
+                   label="PLG_EXTRAFIELDS_PRICING_SYMBOL_TITLE"/>
+
+            <field type="text" name="symbol_text" default=""
+                   label="PLG_EXTRAFIELDS_PRICING_SYMBOL_TEXT_LABEL"/>
+
+            <field type="radio" name="symbol_placement"
+                   default="before" class="btn-group"
+                   label="PLG_EXTRAFIELDS_PRICING_SYMBOL_PLACEMENT_LABEL">
+                <option value="before">PLG_EXTRAFIELDS_PRICING_BEFORE_NUMBERS</option>
+                <option value="after">PLG_EXTRAFIELDS_PRICING_AFTER_NUMBERS</option>
+            </field>
+
+            <field type="spacer" name="add_on_decimal" class="alert alert-warning btn-block"
+                   label="PLG_EXTRAFIELDS_PRICING_DECIMAL_TITLE"/>
+
+            <field type="list" name="decimal_point"
+                   default="0"
+                   label="PLG_EXTRAFIELDS_PRICING_DECIMAL_POINT_LABEL">
+                <option value="0">JNONE</option>
+                <option value="dot">PLG_EXTRAFIELDS_PRICING_DOT</option>
+                <option value="comma">PLG_EXTRAFIELDS_PRICING_COMMA</option>
+            </field>
+            <field type="text" name="decimal_digit"
+                   default="2"
+                   label="PLG_EXTRAFIELDS_PRICING_DIGITS_DECIMAL_LABEL"/>
+
+            <field type="list" name="thousands_separator"
+                   default="comma"
+                   label="PLG_EXTRAFIELDS_PRICING_THOUSANDS_SEPARATOR_LABEL">
+                <option value="0">JNONE</option>
+                <option value="space">PLG_EXTRAFIELDS_PRICING_SPACE</option>
+                <option value="dot">PLG_EXTRAFIELDS_PRICING_DOT</option>
+                <option value="comma">PLG_EXTRAFIELDS_PRICING_COMMA</option>
+            </field>
+
+        </fieldset>
+    </fields>
+    <!-- End parameters for field's create or edit view -->
+</form>

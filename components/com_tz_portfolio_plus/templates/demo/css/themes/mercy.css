@@ -1,0 +1,93 @@
+#tz_options {
+    padding-bottom: 35px;
+}
+/*#tz_options .option-combo a{*/
+/*border: none;*/
+/*color: #3f3f3f;*/
+/*background: none;*/
+/*padding-top: 0;*/
+/*padding-bottom: 0;*/
+/*}*/
+.element .TzInner{
+    margin: 0;
+}
+.element .TzArticleMedia img{
+    width: 100%;
+}
+.element .TzPortfolioDescription{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    font-style: italic;
+    position: absolute;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: opacity 0.6s linear 0s, -webkit-transform 0.4s ease-in-out 0s;
+    -moz-transition: opacity 0.6s linear 0s, -moz-transform 0.4s ease-in-out 0s;
+    -ms-transition: opacity 0.6s linear 0s, -ms-transform 0.4s ease-in-out 0s;
+    -o-transition: opacity 0.6s linear 0s, -o-transform 0.4s ease-in-out 0s;
+    transition: opacity 0.6s linear 0s, transform 0.4s ease-in-out 0s;
+}
+.element .description-inner{
+    margin-bottom: 15px;
+}
+.element .description-inner,
+.element .TzArticle-info,
+.element .description-inner a{
+    color: white;
+}
+.element .TzPortfolioDescription .tzpp_table{
+    border: 1px solid white;
+    background: rgba(0,0,0,0.6);
+}
+.element .TzPortfolioTitle,
+.element .TzPortfolioTitle a{
+    color: white;
+    margin-bottom: 5px;
+    font-style: normal;
+}
+.element .TzInner:hover .TzPortfolioDescription{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+#TzContent .TzPortfolioReadmore{
+    margin-bottom: 0;
+}
+#TzContent .element .tzpp_button{
+    margin: 5px 3px 10px;
+}
+.element .tzpp_button{
+    color: #3f3f3f;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    font-size: 11px;
+    background: white;
+    line-height: 30px;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.element .tzpp_button:nth-child(2n + 1){
+    color: white;
+    background: rgba(255,255,255,0.3);
+}
+.element .TzInner:hover .tzpp_button{
+    opacity: 1;
+}
+#tz_append {
+    margin-top: 50px;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <!-- Form's field for article's create or edit view -->
+    <fields name="media">
+        <fields name="audio"
+                addfieldpath="/administrator/components/com_tz_portfolio_plus/models/fields">
+            <fieldset name="basic">
+                <!-- FIELDS FOR VIDEO -->
+                <field type="list" name="type"
+                       default="soundcloud"
+                        label="PLG_MEDIATYPE_AUDIO_TYPE_LABEL">
+                    <option value="embed">PLG_MEDIATYPE_AUDIO_EMBED</option>
+                    <option value="soundcloud">PLG_MEDIATYPE_AUDIO_SOUNDCLOUD</option>
+                </field>
+                <field type="text" name="code"
+                       label="JGLOBAL_FIELD_ID_LABEL"/>
+                <field type="textarea" name="embed_code"
+                       label="PLG_MEDIATYPE_AUDIO_EMBED_CODE_LABEL"/>
+                <field type="tzmedia" name="thumbnail"
+                       img_max-width="200px"
+                       img_prefix="o"
+                       label="PLG_MEDIATYPE_AUDIO_THUMBNAIL_LABEL"/>
+                <field type="tzcheckbox" name="thumbnail_remove"
+                       merge="true"
+                       label="PLG_MEDIATYPE_AUDIO_SOUNDCLOUD_THUMBNAIL_REMOVE_LABEL"/>
+                <field type="text" name="caption"
+                       label="PLG_MEDIATYPE_AUDIO_THUMBNAIL_CAPTION_LABEL"/>
+            </fieldset>
+        </fields>
+    </fields>
+    <!-- End form's field for article's create or edit view -->
+
+
+</form>

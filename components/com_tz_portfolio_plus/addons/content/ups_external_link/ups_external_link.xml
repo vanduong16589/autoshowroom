@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="tz_portfolio_plus-plugin" group="content" method="upgrade">
+	<name>plg_content_ups_external_link</name>
+	<author>DuongTVTemPlaza</author>
+	<creationDate>2017/04/06</creationDate>
+	<copyright>Copyright (C) 2015 TemPlaza. All rights reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>support@templaza.com</authorEmail>
+	<authorUrl>www.templaza.com/</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_UPS_EXTERNAL_LINK_XML_DESCRIPTION</description>
+
+	<files>
+        <filename plugin="ups_external_link">ups_external_link.php</filename>
+        <filename>controller.php</filename>
+		<filename>index.html</filename>
+		<folder>admin</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>modules</folder>
+		<folder>views</folder>
+	</files>
+
+	<config></config>
+
+</extension>

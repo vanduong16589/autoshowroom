@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="tz_portfolio_plus-template" method="upgrade">
+    <name>demo</name>
+    <version>1.0</version>
+    <creationDate>January 09th 2016</creationDate>
+    <author>DuongTVTemplaza</author>
+    <authorEmail>info@templaza.com</authorEmail>
+    <authorUrl>www.tzportfolio.com</authorUrl>
+    <copyright>Copyright (C) 2015 TemPlaza. All rights reserved.</copyright>
+    <description>TZ_PORTFOLIO_PLUS_TPL_XML_DESCRIPTION</description>
+    <files>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>libraries</folder>
+        <filename>index.html</filename>
+        <filename>template.php</filename>
+        <filename>template.xml</filename>
+        <filename>template_preview.png</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="general" label="TZ_PORTFOLIO_PLUS_TPL_DEMO_GENERAL_FIELDSET_LABEL">
+                <field type="radio" name="enable_awesome_font"
+                       class="btn-group" default="1"
+                       label="TZ_PORTFOLIO_PLUS_TPL_DEMO_ENABLE_AWESOME_FONT_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="text" name="column_height"
+                       label="TZ_PORTFOLIO_PLUS_TPL_DEMO_COLUMN_HEIGHT_LABEL"
+                       description="TZ_PORTFOLIO_PLUS_TPL_DEMO_COLUMN_HEIGHT_DESC"/>
+                <field type="radio" name="enable_resize_image"
+                       class="btn-group" default="1"
+                       label="TZ_PORTFOLIO_PLUS_TPL_DEMO_ENABLE_RESIZE_IMAGE_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

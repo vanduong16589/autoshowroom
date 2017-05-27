@@ -1,0 +1,3 @@
+.TzQuote{padding: 9px;}
+.TzQuote .text {font-size: 15px;font-style: italic;}
+.TzQuote .text > .icon-quote{float: left;width: auto;font-size: 18px;margin: 0;padding-right: 7px;}

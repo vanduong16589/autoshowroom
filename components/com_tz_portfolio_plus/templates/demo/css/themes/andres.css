@@ -1,0 +1,84 @@
+
+.element .TzInner:hover .TzPortfolioDescription,
+.element .TzInner:focus .TzPortfolioDescription{
+    transform: translateY(0px);
+}
+.element .TzPortfolioTitle{
+    margin-bottom: 0;
+}
+.element img{
+    max-width: none;
+    position: relative;
+}
+.element .TzPortfolioDescription,
+.element .TzPortfolioDescription a{
+    color: #3f3f3f;
+}
+.element .TzPortfolioDescription a:hover,
+.element .TzPortfolioDescription a:focus{
+    text-decoration: none;
+}
+.element .TzArticleMedia{
+    z-index: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+.element .tz_portfolio_plus_image{
+    position: static;
+}
+.element .TzPortfolioDescription{
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background: #e7e7e7;
+    padding: 20px 10px 10px;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.4s ease 0s, opacity 0.1s ease 0s;
+    -moz-transition: -moz-transform 0.4s ease 0s, opacity 0.1s ease 0s;
+    -ms-transition: -ms-transform 0.4s ease 0s, opacity 0.1s ease 0s;
+    -o-transition: -o-transform 0.4s ease 0s, opacity 0.1s ease 0s;
+    transition: transform 0.4s ease 0s, opacity 0.1s ease 0s;
+}
+.element .TZcategory-name,
+.element .TZcategory-name a{
+    color: #999;
+    font-style: italic;
+}
+#tz_options{
+    text-align: center;
+}
+#tz_options .option-icon{
+    padding-left: 10px;
+}
+#tz_options .option-combo{
+    color: #888;
+    margin-right: 10px;
+    display: inline-block;
+}
+#tz_options .option-combo a{
+    color: #888;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#tz_options .option-set a{
+    border: none;
+    display: block;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+#tz_options .option-set a.selected{
+    color: white;
+    background: #0088cc;
+}
+#tz_options .option-combo .option-set a:hover,
+#tz_options .option-combo .option-set a:focus,
+#tz_options .option-combo .option-set a:active{
+    color: white;
+    background: #0088cc;
+}

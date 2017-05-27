@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="tz_portfolio_plus-plugin" group="content" method="upgrade">
+	<name>plg_content_comment</name>
+	<author>DuongTVTemPlaza</author>
+	<creationDate>2012/07/17</creationDate>
+	<copyright>Copyright (C) 2015 TemPlaza. All rights reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>support@templaza.com</authorEmail>
+	<authorUrl>www.templaza.com/</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_COMMENT_XML_DESCRIPTION</description>
+
+	<files>
+        <filename plugin="comment">comment.php</filename>
+        <filename>controller.php</filename>
+		<filename>index.html</filename>
+		<folder>admin</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>modules</folder>
+		<folder>views</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field type="list" name="comment_type"
+					   default="facebook"
+					   label="PLG_CONTENT_COMMENT_TYPE_LABEL">
+					<option value="facebook">PLG_CONTENT_COMMENT_FACEBOOK</option>
+					<option value="jcomment">PLG_CONTENT_COMMENT_JCOMMENT</option>
+					<option value="disqus">PLG_CONTENT_COMMENT_DISQUS</option>
+				</field>
+
+				<!-- Start Disqus Options -->
+				<field type="spacer" name="spacer_content_comment_disqus_options"
+					   class="alert alert-warning btn-block"
+					   label="PLG_CONTENT_COMMENT_SPACER_DISQUS_OPTIONS"/>
+				<field type="text" name="disqus_subdomain"
+					   default="test"
+					   label="PLG_CONTENT_COMMENT_DISQUS_SUBDOMAIN_LABEL"
+					   description="PLG_CONTENT_COMMENT_DISQUS_SUBDOMAIN_DESC"/>
+				<field type="text" name="disqus_secretkey"
+					   label="PLG_CONTENT_COMMENT_DISQUS_SECRET_KEY_LABEL"
+					   description="PLG_CONTENT_COMMENT_DISQUS_SECRET_KEY_DESC"/>
+				<!-- End Disqus Options -->
+
+				<field type="spacer" name="spacer_article_category_listing_hr" hr="true"/>
+				<field type="spacer" name="spacer_article_category_listing_name"
+					   class="alert alert-warning btn-block"
+					   label="COM_TZ_PORTFOLIO_PLUS_SPACER_ARTICLE_OPTIONS_IN_CATEGORY_LISTINGS"/>
+				<field type="radio" name="show_cat_comment_count"
+					   default="1" class="btn-group"
+					   label="PLG_CONTENT_COMMENT_SHOW_COMMENT_COUNT_LABEL"
+					   description="PLG_CONTENT_COMMENT_SHOW_COMMENT_COUNT_DESC">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

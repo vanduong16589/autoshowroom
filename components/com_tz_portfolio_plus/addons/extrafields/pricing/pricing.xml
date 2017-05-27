@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="tz_portfolio_plus-plugin" group="extrafields" method="upgrade">
+    <name>plg_extrafields_pricing</name>
+    <author>DuongTVTemPlaza</author>
+    <creationDate>October 20th 2015</creationDate>
+    <copyright>Copyright (C) 2015 TemPlaza. All rights reserved.</copyright>
+    <license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>support@templaza.com</authorEmail>
+    <authorUrl>www.templaza.com/</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_EXTRAFIELDS_PRICING_XML_DESCRIPTION</description>
+
+    <files>
+        <filename plugin="pricing">pricing.php</filename>
+        <filename>index.html</filename>
+        <folder>admin</folder>
+        <folder>css</folder>
+        <folder>language</folder>
+		<folder>libraries</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field type="text" name="size" default="5"
+                       label="PLG_EXTRAFIELDS_PRICING_SIZE_LABEL"/>
+                <field type="list" name="search_type"
+                       default="dropdownlist"
+                       label="PLG_EXTRAFIELDS_PRICING_SEARCH_TYPE_LABEL">
+                    <option value="dropdownlist">PLG_EXTRAFIELDS_PRICING_DROPDOWNLIST</option>
+                    <option value="multiselect">PLG_EXTRAFIELDS_PRICING_MULTIPLESELECT</option>
+                    <option value="checkbox">PLG_EXTRAFIELDS_PRICING_CHECKBOX</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

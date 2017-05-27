@@ -1,0 +1,107 @@
+#tz_options {
+    padding-bottom: 35px;
+}
+.element .TzInner{
+    margin: 0;
+}
+.element .TzPortfolioDescription{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    font-style: italic;
+    position: absolute;
+    -webkit-transition: opacity 0.3s linear 0s;
+    -moz-transition: opacity 0.3s linear 0s;
+    -ms-transition: opacity 0.3s linear 0s;
+    -o-transition: opacity 0.3s linear 0s;
+    transition: opacity 0.3s linear 0s;
+}
+.element .TzPortfolioDescription .tzpp_table{
+    background: rgba(63,63,63,0.8);
+}
+.element .description-inner{
+    color: white;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out 0s;
+    -moz-transition: -moz-transform 0.3s ease-in-out 0s;
+    -ms-transition: -ms-transform 0.3s ease-in-out 0s;
+    -o-transition: -o-transform 0.3s ease-in-out 0s;
+    transition: transform 0.3s ease-in-out 0s;
+}
+.element .description-inner a,
+.element .TzArticle-info{
+    color: white;
+}
+.element .TzPortfolioTitle,
+.element .TzPortfolioTitle a{
+    color: white;
+    margin-bottom: 4px;
+    font-style: normal;
+}
+.element .TzArticle-info{
+    margin-bottom: 0;
+}
+.element .TzInner:hover .TzPortfolioDescription{
+    opacity: 1;
+}
+.element .TzInner:hover .description-inner{
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+}
+#TzContent .TzPortfolioReadmore{
+    margin-bottom: 0;
+}
+#TzContent .element .tzpp_button{
+    margin: 0 3px 10px;
+}
+.element .tzpp_button{
+    color: #3f3f3f;
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+    background: white;
+    line-height: 40px;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out 0s;
+    -moz-transition: -moz-transform 0.3s ease-in-out 0s;
+    -ms-transition: -ms-transform 0.3s ease-in-out 0s;
+    -o-transition: -o-transform 0.3s ease-in-out 0s;
+    transition: transform 0.3s ease-in-out 0s;
+}
+.element .tzpp_button:nth-child(2n){
+    color: white;
+    background: rgba(255,255,255,0.3);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+    transform: translateX(50px);
+}
+.element .TzInner:hover .tzpp_button{
+    opacity: 1;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+}

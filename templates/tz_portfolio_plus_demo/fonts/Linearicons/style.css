@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'lineariconsregular';
+    src: url('linearicons-webfont.eot');
+    src: url('linearicons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('linearicons-webfont.woff2') format('woff2'),
+         url('linearicons-webfont.woff') format('woff'),
+         url('linearicons-webfont.ttf') format('truetype'),
+         url('linearicons-webfont.svg#lineariconsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,106 @@
+.element .TzInner{
+    margin: 0;
+    text-align: left;
+}
+#tz_options {
+    padding-bottom: 35px;
+}
+.element .TzPortfolioTitle{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.element .TzPortfolioTitle::after {
+    background: white;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+.element .TzPortfolioTitle,
+.element .TzPortfolioTitle a{
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+}
+.element .TzPortfolioDescription {
+    background: #0088cc;
+    color: white;
+    font-style: italic;
+    height: 100%;
+    left: 0;
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s ;
+    width: 100%;
+    z-index: 1;
+}
+.element .TzInner:hover .TzPortfolioDescription {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.element .TzPortfolioDescription a,
+.element .TzArticle-info{
+    color: white;
+}
+.TzItemPage .TzArticleMedia img{
+    margin: 0 auto;
+    display: block;
+}
+.element .tzpp_absolute {
+    bottom: 0;
+    height: 70px;
+    top: auto;
+    text-align: right;
+    padding: 0 25px 25px;
+}
+.element a.tzpp_button{
+    width: 45px;
+    height: 45px;
+    color: #3f3f3f;
+    background: white;
+    line-height: 45px;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.element a.tzpp_button:nth-child(2n){
+    color: white;
+    background: #3f3f3f;
+}
+.element .TzInner:hover .TzArticleMedia img {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.element .TzArticleMedia img {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s ;
+}
+#tz_append {
+    margin-top: 50px;
+}

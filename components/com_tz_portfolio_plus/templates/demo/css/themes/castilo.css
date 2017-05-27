@@ -1,0 +1,102 @@
+/* Styles for portfolio view */
+#portfolio{
+    color: #3f3f3f;
+	margin: 0;
+}
+.element .TzPortfolioDescription{
+    color: #aaa;
+    font-style: italic;
+    padding: 24px 9px 19px;
+    border: 1px solid #e7e7e7;
+}
+.element .TzPortfolioDescription a{
+	color: #777777;
+	
+}
+.element .TzPortfolioDescription a:hover{
+	color: #0088cc;
+}
+.element .TzPortfolioIntrotext{
+	background: rgba(63,63,63,0.8);
+	padding: 10px 15px;
+	text-transform:uppercase;
+	margin: 0 20px;
+	color: #fff;
+	font-size: 16px;
+	line-height : 1.5em;
+}
+.element .TzPortfolioIntrotext p{
+	margin: 0;
+}
+.element .TzPortfolioReadmore{
+	color:#fff;
+	background: #0088cc;
+	text-transform:uppercase;
+	line-height: 1.5em;
+	padding: 10px 15px;
+    margin: 15px 0 0 !important;
+    display: inline-block;
+    font-size: 12px;
+}
+.element .TzPortfolioReadmore:hover{
+	background: #fff;
+	color: #0088cc;
+}
+.element .TzPortfolioTitle{
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.element .TzPortfolioTitle,
+.element .TzPortfolioTitle a{
+    color: #3f3f3f;
+    font-style: normal;
+}
+.element .TzArticleMedia{
+    position: relative;
+}
+
+.element .tzpp_absolute{
+    z-index: 2;
+}
+.element .tzpp_button{
+    color: #0088cc;
+    width: 50px;
+    height: 50px;
+    margin: 0 3px;
+    background: white;
+    line-height: 50px;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.element .tzpp_button:nth-child(2n){
+    color: white;
+    background: rgba(255,255,255,0.3);
+}
+.element .TzArticleMedia .tzpp_absolute{
+    opacity: 0;
+    background: rgba(63,63,63,0.5);
+    visibility: hidden;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s ;
+}
+.element .TzInner:hover .TzArticleMedia .tzpp_absolute{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}

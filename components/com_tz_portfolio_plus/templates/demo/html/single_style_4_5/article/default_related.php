@@ -1,0 +1,99 @@
+<?php
+/*------------------------------------------------------------------------
+
+# TZ Portfolio Plus Extension
+
+# ------------------------------------------------------------------------
+
+# author    DuongTVTemPlaza
+
+# copyright Copyright (C) 2015 templaza.com. All Rights Reserved.
+
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+
+# Websites: http://www.templaza.com
+
+# Technical Support:  Forum - http://templaza.com/Forum
+
+-------------------------------------------------------------------------*/
+
+// no direct access
+defined('_JEXEC') or die;
+
+if (!$this->print) :
+    $doc    = JFactory::getDocument();
+
+    $lists  = $this -> itemsRelated;
+    // Create shortcuts to some parameters.
+    $params		= $this->item->params;
+    $tmpl       = null;
+    if($lists):
+        if($params -> get('show_related_article',1)):
+
+            $tzTemplate = TZ_Portfolio_PlusTemplate::getTemplate(true);
+            $tplParams  = $tzTemplate -> params;
+
+            $doc    = JFactory::getDocument();
+            $doc -> addScript(TZ_Portfolio_PlusUri::base(true).'/templates/'.$tzTemplate -> template
+                .'/libraries/owlcarousel/owl.carousel.min.js');
+            $doc -> addStyleSheet(TZ_Portfolio_PlusUri::base(true).'/templates/'.$tzTemplate -> template
+                .'/libraries/owlcarousel/owl.carousel.css');
+            $doc -> addScriptDeclaration('
+            (function($){
+                $(document).ready(function(){
+                    $(".TzRelated .list-item").css("display","none");
+                });
+                $(window).load(function() {
+                    $(".TzRelated .list-item").css("display","").owlCarousel({
+                        items: 4,
+                        autoPlay : true,
+                        navigation : true,
+                        pagination : false,
+                        navigationText: ["<i class=\"tzpp_icon tzpp_icon-arrow-left\"></i>", "<i class=\"tzpp_icon tzpp_icon-arrow-right\"></i>"]
+                    });
+                });
+            })(jQuery);
+            ');
+?>
+<div class="TzRelated">
+    <?php if($params -> get('show_related_heading',1)):?>
+        <?php
+            $title    = JText::_('COM_TZ_PORTFOLIO_PLUS_RELATED_ARTICLE');
+            if($params -> get('related_heading')){
+                $title  = $params -> get('related_heading');
+            }
+        ?>
+        <h3 class="TzRelatedTitle"><?php echo $title;?></h3>
+    <?php endif;?>
+	
+	<div class="list">
+    <div class="list-item">
+    <?php foreach($lists as $i => $itemR):?>
+    <div class="TzItem<?php if($i == 0) echo ' first'; if($i == count($lists) - 1) echo ' last';?>">
+
+        <?php
+			if($itemR->event->onContentDisplayMediaType && !empty($itemR->event->onContentDisplayMediaType)) {
+				echo $itemR->event->onContentDisplayMediaType;
+			}
+
+			if(!isset($itemR -> mediatypes) || (isset($itemR -> mediatypes) && !in_array($itemR -> type,$itemR -> mediatypes))){
+				if($params -> get('show_related_title',1)){
+        ?>
+			<div class="info">
+				<a href="<?php echo $itemR -> link;?>"
+				   class="TzTitle<?php if($params -> get('tz_use_lightbox',0) == 1){echo ' fancybox fancybox.iframe';}?>">
+					<?php echo $itemR -> title;?>
+				</a>
+			</div>
+        <?php }
+        }?>
+    </div>
+
+    <?php endforeach;?>
+    </div>	
+	</div>
+</div>
+ 
+        <?php endif;?>
+    <?php endif;?>
+<?php endif;?>
